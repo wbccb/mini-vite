@@ -1,0 +1,16 @@
+{
+  "name": "@vitejs/vite-monorepo",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon ./bin/vite.cjs"
+  },
+  "dependencies": {
+    "esbuild": "0.17.16",
+    "koa": "2.14.1"
+  },
+  "devDependencies": {
+    "cac": "^6.7.14"
+  }
+}

@@ -3,13 +3,12 @@
   "engines": {
     "node": ">=16.0.0"
   },
-  "scripts": {
-    "dev": "nodemon ./bin/vite.cjs"
-  },
   "dependencies": {
+    "es-module-lexer": "^1.2.1",
+    "esbuild": "0.17.16",
     "koa": "2.14.1",
     "koa-static": "^5.0.0",
-    "esbuild": "0.17.16"
+    "magic-string": "^0.30.0"
   },
   "devDependencies": {
     "cac": "^6.7.14"

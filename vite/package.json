@@ -7,8 +7,9 @@
     "dev": "nodemon ./bin/vite.cjs"
   },
   "dependencies": {
-    "esbuild": "0.17.16",
-    "koa": "2.14.1"
+    "koa": "2.14.1",
+    "koa-static": "^5.0.0",
+    "esbuild": "0.17.16"
   },
   "devDependencies": {
     "cac": "^6.7.14"

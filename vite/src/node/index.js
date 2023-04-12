@@ -1,15 +1,20 @@
 const Koa = require('koa');
-const app = new Koa();
+const initServer = require("./server/index.js");
+const path = require("path");
 
-app.use(async (ctx) => {
-    ctx.body = 'Hello World';
-});
+const staticPath = "static";
+const root = path.join(__dirname, '../..');
 
-const initServer = ()=> {
+const createServer = ()=> {
+    const app = new Koa();
+
+    // 初始化多种服务，比如静态资源服务
+    initServer({app, root, staticPath});
+
+
     app.listen(3000);
 }
 
-
 module.exports = {
-    initServer
+    createServer
 };

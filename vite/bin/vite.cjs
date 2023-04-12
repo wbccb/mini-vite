@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
-const server = require("../src/node/index.js");
-server.initServer();
+const server = require("../src/node");
+server.createServer();

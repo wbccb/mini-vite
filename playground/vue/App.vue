@@ -1,5 +1,5 @@
 <template>
-  <div>这是App.vue</div>
+  <div>这是App.vue{{test}}</div>
 </template>
 
 <script>
@@ -7,7 +7,7 @@ import {ref} from "vue";
 export default {
   name: "App",
   setup() {
-    const test = ref("");
+    const test = ref("测试测试");
     return {
       test
     }

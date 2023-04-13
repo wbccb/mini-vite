@@ -1,7 +1,7 @@
 const path = require("path");
 const {init, parse} = require('es-module-lexer');
 const parseImports = parse;
-const {MagicString} = require('magic-string');
+const MagicString = require('magic-string');
 
 
 /**
@@ -14,7 +14,7 @@ function transformContent(source) {
 
     if (!imports.length) {
         console.info("没有imports");
-        return;
+        return source;
     }
 
     for (const importItem of imports) {

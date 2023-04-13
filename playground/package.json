@@ -5,5 +5,8 @@
   "scripts": {
     "dev": "nodemon ../vite/bin/vite.cjs",
     "debugger": "node --inspect-brk=9229 ../vite/bin/vite.cjs"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
   }
 }

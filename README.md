@@ -9,8 +9,6 @@
 4. 通过mini-vite，学习vite中一些好的代码写法
 
 
-
-
 # 手写vite
 
 目标：处理html、css、js、vue等基础数据
@@ -49,3 +47,13 @@
 2. `<script>`: export default替换为const xx= 以及 替换裸模块的地址为/modeuls/xx，返回xxx?type=template和xxx?type=style
 3. `<template>`: `<template>`返回的import触发再次请求，然后再解析出对应的<template>标签数据返回
 4. `<style>`: `<script>`返回的import触发再次请求，然后再解析出对应的<style>标签数据返回
+
+# 版本2
+
+在上面版本1中，我们已经实现了重写裸模块路径以及解析vue文件
+在源码分析中，我们还差
+● 预构建(resolveId+onLoad)esbuild打包：commonjs->esmodule以及将多个import打包到一个文件中
+● 请求拦截：插件transform转化，比如转化scss->css等逻辑
+● 热更新：websocket以及accept等自定义处理
+
+接下来我们在版本2中将尽可能完善这一部分的内容

@@ -1,5 +1,8 @@
 {
-  "name": "@vitejs/vite-monorepo",
+  "name": "my-mini-vite",
+  "bin": {
+    "mini-vite": "./bin/vite.cjs"
+  },
   "engines": {
     "node": ">=16.0.0"
   },

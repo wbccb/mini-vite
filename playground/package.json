@@ -1,9 +1,9 @@
 {
-  "name": "@vitejs/test-css-codesplit",
+  "name": "playground",
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "nodemon ../vite/bin/vite.cjs",
+    "dev": "mini-vite",
     "debugger": "node --inspect-brk=9229 ../vite/bin/vite.cjs"
   },
   "dependencies": {

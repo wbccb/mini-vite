@@ -67,9 +67,7 @@ const createServer = () => {
             // xxx.vue&type=template
             // xxx.vue&type=style
             // xxx.vue&type=script
-
-            // const filterUrl = completeUrl.split("?")[0];
-
+            
             ctx.type = "application/javascript";
 
             if (completeUrl.indexOf("?")) {
@@ -109,13 +107,8 @@ const createServer = () => {
                         break;
                     case "style":
                         // 多个style，比如5个style会被抽离为5个请求
-                        let cssContent = "";
                         const content = styles[parseInt(ctx.query.index)].content;
-                        // if(typeof content !== "string") {
-                        cssContent = JSON.stringify(content);
-                        // } else {
-                        //     cssContent = content;
-                        // }
+                        const cssContent = JSON.stringify(content);
                         ctx.body = `
                             \n const __css = ${cssContent};
                             \n insertToDOMStyle(__css);
@@ -146,7 +139,6 @@ function resolvePath(ctx, url) {
         return path.join(root, staticPath, "node_modules", moduleName, contentObject.module);
     }
 
-    // 解析vue单文件
 
     return "";
 }

@@ -1,7 +1,5 @@
 > 本文基于vite 4.3.0-beta.1版本的源码进行手写
 
-> 下面的代码分析文档同时同步到[个人博客](https://segmentfault.com/u/wbccb)中
-
 # mini-vite项目创建的原因
 1. 通过mini-vite，验证源码分析文章的整体逻辑是否准确
 2. 通过mini-vite，检验源码分析是否有遗漏的细节
@@ -9,7 +7,7 @@
 4. 通过mini-vite，学习vite中一些好的代码写法
 
 
-# 手写vite
+# 目前版本
 
 目标：处理html、css、js、vue等基础数据
 

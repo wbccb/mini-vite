@@ -50,6 +50,7 @@
 
 # 版本2
 
+## 功能
 在上面版本1中，我们已经实现了重写裸模块路径以及解析vue文件
 在源码分析中，我们还差
 ● 预构建(resolveId+onLoad)esbuild打包：commonjs->esmodule以及将多个import打包到一个文件中
@@ -57,3 +58,7 @@
 ● 热更新：websocket以及accept等自定义处理
 
 接下来我们在版本2中将尽可能完善这一部分的内容
+
+## 其它
+1. 常见`plugin`手写
+2. 服务器渲染SSR
